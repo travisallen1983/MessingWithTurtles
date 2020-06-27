@@ -61,242 +61,53 @@ def turtle2():
     bush.shape("circle")
     bush.color("black")
 
-    xpos = -220
-    ypos = -180
-    for i in range(1, 10, 2):
-        xpos += i * 10
-        ypos += i * 10
-        for j in range(5):
-            bush.penup()
-            bush.setpos(xpos, ypos)
-            bush.pendown()
-            bush.stamp()
-            bush.setpos(xpos - 10, ypos)
-            bush.stamp()
-            bush.setpos(xpos , ypos + 12)
-            bush.stamp()
-            ypos += 65
-        xpos = -220
-        ypos = -180
+    def bushposition(x, y):
+        xpos = x
+        ypos = y
+        for i in range(1, 10, 2):
+            xpos += i * 10
+            ypos += i * 10
+            for j in range(5):
+                bush.penup()
+                bush.setpos(xpos, ypos)
+                bush.pendown()
+                bush.stamp()
+                bush.setpos(xpos - 10, ypos)
+                bush.stamp()
+                bush.setpos(xpos , ypos + 12)
+                bush.stamp()
+                ypos += 65
+            xpos = x
+            ypos = y
 
-    xpos = -95
-    ypos = -180
-    for i in range(1, 10, 2):
-        xpos += i * 10
-        ypos += i * 10
-        for j in range(5):
-            bush.penup()
-            bush.setpos(xpos, ypos)
-            bush.pendown()
-            bush.stamp()
-            bush.setpos(xpos - 10, ypos)
-            bush.stamp()
-            bush.setpos(xpos , ypos + 12)
-            bush.stamp()
-            ypos += 65
-        xpos = -95
-        ypos = -180
-
-    xpos = 55
-    ypos = -180
-    for i in range(1, 10, 2):
-        xpos += i * 10
-        ypos += i * 10
-        for j in range(5):
-            bush.penup()
-            bush.setpos(xpos, ypos)
-            bush.pendown()
-            bush.stamp()
-            bush.setpos(xpos - 10, ypos)
-            bush.stamp()
-            bush.setpos(xpos , ypos + 12)
-            bush.stamp()
-            ypos += 65
-        xpos = 55
-        ypos = -180
+    bushposition(-220, -180)
+    bushposition(-95, -180)
+    bushposition(55, -180)
 
     bush = turtle.Turtle()
     bush.shape("circle")
     bush.color("darkgreen")
 
-    xpos = -200
-    ypos = -180
-    for i in range(1, 10, 2):
-        xpos += i * 10
-        ypos += i * 10
-        for j in range(5):
-            bush.penup()
-            bush.setpos(xpos, ypos)
-            bush.pendown()
-            bush.stamp()
-            bush.setpos(xpos - 10, ypos)
-            bush.stamp()
-            bush.setpos(xpos , ypos + 12)
-            bush.stamp()
-            ypos += 65
-        xpos = -200
-        ypos = -180
-
-    xpos = -75
-    ypos = -180
-    for i in range(1, 10, 2):
-        xpos += i * 10
-        ypos += i * 10
-        for j in range(5):
-            bush.penup()
-            bush.setpos(xpos, ypos)
-            bush.pendown()
-            bush.stamp()
-            bush.setpos(xpos - 10, ypos)
-            bush.stamp()
-            bush.setpos(xpos , ypos + 12)
-            bush.stamp()
-            ypos += 65
-        xpos = -75
-        ypos = -180
-
-    xpos = 75
-    ypos = -180
-    for i in range(1, 10, 2):
-        xpos += i * 10
-        ypos += i * 10
-        for j in range(5):
-            bush.penup()
-            bush.setpos(xpos, ypos)
-            bush.pendown()
-            bush.stamp()
-            bush.setpos(xpos - 10, ypos)
-            bush.stamp()
-            bush.setpos(xpos , ypos + 12)
-            bush.stamp()
-            ypos += 65
-        xpos = 75
-        ypos = -180
-
-    text = turtle.Turtle()
-    text.speed(5)
-    text.penup()
-    text.shape("blank")
-    text.color("white")
-    text.setpos(0, 0)
-    time.sleep(1)
+    bushposition(-200, -180)
+    bushposition(-75, -180)
+    bushposition(75, -180)
 
     bush = turtle.Turtle()
     bush.shape("circle")
     bush.color("limegreen")
 
-    xpos = -180
-    ypos = -180
-    for i in range(1, 10, 2):
-        xpos += i * 10
-        ypos += i * 10
-        for j in range(5):
-            bush.penup()
-            bush.setpos(xpos, ypos)
-            bush.pendown()
-            bush.stamp()
-            bush.setpos(xpos - 10, ypos)
-            bush.stamp()
-            bush.setpos(xpos , ypos + 12)
-            bush.stamp()
-            ypos += 65
-        xpos = -180
-        ypos = -180
+    bushposition(-180, -180)
+    bushposition(-55, -180)
+    bushposition(95, -180)
 
-    xpos = -55
-    ypos = -180
-    for i in range(1, 10, 2):
-        xpos += i * 10
-        ypos += i * 10
-        for j in range(5):
-            bush.penup()
-            bush.setpos(xpos, ypos)
-            bush.pendown()
-            bush.stamp()
-            bush.setpos(xpos - 10, ypos)
-            bush.stamp()
-            bush.setpos(xpos , ypos + 12)
-            bush.stamp()
-            ypos += 65
-        xpos = -55
-        ypos = -180
-
-    xpos = 95
-    ypos = -180
-    for i in range(1, 10, 2):
-        xpos += i * 10
-        ypos += i * 10
-        for j in range(5):
-            bush.penup()
-            bush.setpos(xpos, ypos)
-            bush.pendown()
-            bush.stamp()
-            bush.setpos(xpos - 10, ypos)
-            bush.stamp()
-            bush.setpos(xpos , ypos + 12)
-            bush.stamp()
-            ypos += 65
-        xpos = 95
-        ypos = -180
 
     bush = turtle.Turtle()
     bush.shape("circle")
     bush.color("white")
 
-    xpos = -160
-    ypos = -180
-    for i in range(1, 10, 2):
-        xpos += i * 10
-        ypos += i * 10
-        for j in range(5):
-            bush.penup()
-            bush.setpos(xpos, ypos)
-            bush.pendown()
-            bush.stamp()
-            bush.setpos(xpos - 10, ypos)
-            bush.stamp()
-            bush.setpos(xpos , ypos + 12)
-            bush.stamp()
-            ypos += 65
-        xpos = -160
-        ypos = -180
-
-    xpos = -35
-    ypos = -180
-    for i in range(1, 10, 2):
-        xpos += i * 10
-        ypos += i * 10
-        for j in range(5):
-            bush.penup()
-            bush.setpos(xpos, ypos)
-            bush.pendown()
-            bush.stamp()
-            bush.setpos(xpos - 10, ypos)
-            bush.stamp()
-            bush.setpos(xpos , ypos + 12)
-            bush.stamp()
-            ypos += 65
-        xpos = -35
-        ypos = -180
-
-    xpos = 115
-    ypos = -180
-    for i in range(1, 10, 2):
-        xpos += i * 10
-        ypos += i * 10
-        for j in range(5):
-            bush.penup()
-            bush.setpos(xpos, ypos)
-            bush.pendown()
-            bush.stamp()
-            bush.setpos(xpos - 10, ypos)
-            bush.stamp()
-            bush.setpos(xpos , ypos + 12)
-            bush.stamp()
-            ypos += 65
-        xpos = 115
-        ypos = -180
-
+    bushposition(-160, -180)
+    bushposition(-35, -180)
+    bushposition(115, -180)
 
 
     screen.exitonclick()
@@ -464,183 +275,99 @@ def race():
     lines5.speed(10)
     for run in range(130):
 
-        if run < 20:
+        def racetrack(distance):
+
             lines1.pendown()
-            lines1_distance = 4
+            lines1_distance = distance
             lines1.forward(lines1_distance)
             lines1.stamp()
             lines1.penup()
             lines1.forward(lines1_distance / 2)
             lines2.pendown()
-            lines2_distance = 4
+            lines2_distance = distance
             lines2.forward(lines2_distance)
             lines2.stamp()
             lines2.penup()
             lines2.forward(lines2_distance / 2)
             lines3.pendown()
-            lines3_distance = 4
+            lines3_distance = distance
             lines3.forward(lines3_distance)
             lines3.stamp()
             lines3.penup()
             lines3.forward(lines3_distance / 2)
             lines4.pendown()
-            lines4_distance = 4
+            lines4_distance = distance
             lines4.forward(lines4_distance)
             lines4.stamp()
             lines4.penup()
             lines4.forward(lines4_distance / 2)
             lines5.pendown()
-            lines5_distance = 4
+            lines5_distance = distance
             lines5.forward(lines5_distance)
             lines5.stamp()
             lines5.penup()
             lines5.forward(lines5_distance / 2)
+
+        def racetrack2(distance):
+            lines1.pendown()
+            lines1_distance = distance
+            lines1.left(lines1_distance)
+            lines1.forward(1)
+            lines1.stamp()
+            lines1.penup()
+            lines1.forward(lines1_distance / 2)
+            lines2.pendown()
+            lines2_distance = distance
+            lines2.left(lines2_distance)
+            lines2.forward(1)
+            lines2.forward(lines2_distance)
+            lines2.stamp()
+            lines2.penup()
+            lines2.forward(lines2_distance / 2)
+            lines3.pendown()
+            lines3_distance = distance
+            lines3.left(lines3_distance)
+            lines3.forward(10)
+            lines3.forward(lines3_distance)
+            lines3.stamp()
+            lines3.penup()
+            lines3.forward(lines3_distance / 2)
+            lines4.pendown()
+            lines4_distance = distance
+            lines4.left(lines4_distance)
+            lines4.forward(20)
+            lines4.forward(lines4_distance)
+            lines4.stamp()
+            lines4.penup()
+            lines4.forward(lines4_distance / 2)
+            lines5.pendown()
+            lines5_distance = distance
+            lines5.left(lines5_distance)
+            lines5.forward(30)
+            lines5.forward(lines5_distance)
+            lines5.stamp()
+            lines5.penup()
+            lines5.forward(lines5_distance / 2)
+
+        if run < 20:
+
+            racetrack(4)
+
 
         elif run >= 20 and run < 38:
-            lines1.pendown()
-            lines1_distance = 10
-            lines1.left(lines1_distance)
-            lines1.forward(1)
-            lines1.stamp()
-            lines1.penup()
-            lines1.forward(lines1_distance / 2)
-            lines2.pendown()
-            lines2_distance = 10
-            lines2.left(lines2_distance)
-            lines2.forward(1)
-            lines2.forward(lines2_distance)
-            lines2.stamp()
-            lines2.penup()
-            lines2.forward(lines2_distance / 2)
-            lines3.pendown()
-            lines3_distance = 10
-            lines3.left(lines3_distance)
-            lines3.forward(10)
-            lines3.forward(lines3_distance)
-            lines3.stamp()
-            lines3.penup()
-            lines3.forward(lines3_distance / 2)
-            lines4.pendown()
-            lines4_distance = 10
-            lines4.left(lines4_distance)
-            lines4.forward(20)
-            lines4.forward(lines4_distance)
-            lines4.stamp()
-            lines4.penup()
-            lines4.forward(lines4_distance / 2)
-            lines5.pendown()
-            lines5_distance = 10
-            lines5.left(lines5_distance)
-            lines5.forward(30)
-            lines5.forward(lines5_distance)
-            lines5.stamp()
-            lines5.penup()
-            lines5.forward(lines5_distance / 2)
+
+            racetrack2(10)
+
 
         elif run >= 40 and run < 85:
-            lines1.pendown()
-            lines1_distance = 4
-            lines1.forward(lines1_distance)
-            lines1.stamp()
-            lines1.penup()
-            lines1.forward(lines1_distance / 2)
-            lines2.pendown()
-            lines2_distance = 4
-            lines2.forward(lines2_distance)
-            lines2.stamp()
-            lines2.penup()
-            lines2.forward(lines2_distance / 2)
-            lines3.pendown()
-            lines3_distance = 4
-            lines3.forward(lines3_distance)
-            lines3.stamp()
-            lines3.penup()
-            lines3.forward(lines3_distance / 2)
-            lines4.pendown()
-            lines4_distance = 4
-            lines4.forward(lines4_distance)
-            lines4.stamp()
-            lines4.penup()
-            lines4.forward(lines4_distance / 2)
-            lines5.pendown()
-            lines5_distance = 4
-            lines5.forward(lines5_distance)
-            lines5.stamp()
-            lines5.penup()
-            lines5.forward(lines5_distance / 2)
+            racetrack(4)
 
         elif run >= 85 and run < 103:
-            lines1.pendown()
-            lines1_distance = 10
-            lines1.left(lines1_distance)
-            lines1.forward(1)
-            lines1.stamp()
-            lines1.penup()
-            lines1.forward(lines1_distance / 2)
-            lines2.pendown()
-            lines2_distance = 10
-            lines2.left(lines2_distance)
-            lines2.forward(1)
-            lines2.forward(lines2_distance)
-            lines2.stamp()
-            lines2.penup()
-            lines2.forward(lines2_distance / 2)
-            lines3.pendown()
-            lines3_distance = 10
-            lines3.left(lines3_distance)
-            lines3.forward(10)
-            lines3.forward(lines3_distance)
-            lines3.stamp()
-            lines3.penup()
-            lines3.forward(lines3_distance / 2)
-            lines4.pendown()
-            lines4_distance = 10
-            lines4.left(lines4_distance)
-            lines4.forward(20)
-            lines4.forward(lines4_distance)
-            lines4.stamp()
-            lines4.penup()
-            lines4.forward(lines4_distance / 2)
-            lines5.pendown()
-            lines5_distance = 10
-            lines5.left(lines5_distance)
-            lines5.forward(30)
-            lines5.forward(lines5_distance)
-            lines5.stamp()
-            lines5.penup()
-            lines5.forward(lines5_distance / 2)
+
+            racetrack2(10)
 
         elif run >= 103 and run <= 130:
-            lines1.pendown()
-            lines1_distance = 4
-            lines1.forward(lines1_distance)
-            lines1.stamp()
-            lines1.penup()
-            lines1.forward(lines1_distance / 2)
-            lines2.pendown()
-            lines2_distance = 4
-            lines2.forward(lines2_distance)
-            lines2.stamp()
-            lines2.penup()
-            lines2.forward(lines2_distance / 2)
-            lines3.pendown()
-            lines3_distance = 4
-            lines3.forward(lines3_distance)
-            lines3.stamp()
-            lines3.penup()
-            lines3.forward(lines3_distance / 2)
-            lines4.pendown()
-            lines4_distance = 4
-            lines4.forward(lines4_distance)
-            lines4.stamp()
-            lines4.penup()
-            lines4.forward(lines4_distance / 2)
-            lines5.pendown()
-            lines5_distance = 4
-            lines5.forward(lines5_distance)
-            lines5.stamp()
-            lines5.penup()
-            lines5.forward(lines5_distance / 2)
+            racetrack(4)
 
     yellow = turtle.Turtle()
     yellow.shape("circle")
@@ -717,7 +444,6 @@ def race():
             blue.forward(blue_distance)
             blue_range += blue_distance
 
-
         elif red_range >= 150 and red_range < 300:
             for turn in range(18):
                 red_distance = 10
@@ -739,6 +465,8 @@ def race():
                 blue.left(blue_distance)
                 blue.forward(blue_distance)
                 blue_range += blue_distance
+
+
 
 
         elif red_range >= 300 and red_range < 600:
@@ -777,7 +505,6 @@ def race():
                 blue.left(blue_distance)
                 blue.forward(blue_distance)
                 blue_range += blue_distance
-
 
         elif red_range >= 650 and red_range < 935:
             red_distance = round(random.random() * 3)
@@ -838,16 +565,57 @@ def race():
 
     screen.exitonclick()
 
+def boxes():
+
+    colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+    screen = turtle.Screen()
+    screen.bgcolor("black")
+    time.sleep(0)
+    forwardlength = 400
+    forwardwidth = 200
+    x = 200
+    y = -100
+    pensize = 7
+
+    for color in colors:
+
+        box = turtle.Turtle()
+        box.penup()
+        box.pensize(pensize)
+        box.shape("blank")
+        box.pencolor(color)
+        box.setpos(x, y)
+        box.left(180)
+        box.pendown()
+        box.forward(forwardlength)
+        box.right(90)
+        box.forward(forwardwidth)
+        box.right(90)
+        box.forward(forwardlength)
+        box.right(90)
+        box.forward(forwardwidth)
+        box.right(90)
+        box.penup()
+        forwardlength -= 50
+        forwardwidth -= 20
+        x -= 25
+        y += 10
+        pensize -= 1
+
+
+    screen.exitonclick()
+
 
 
 def main():
 
 
-    turtle1()
+    #turtle1()
     #turtle2()
     #turtle3()
     #turtle4()
     #race()
+    boxes()
 
 
 if __name__ == "__main__":
